@@ -17,5 +17,6 @@ def main():
 
     print(sum(abs(l - r) for l, r in zip(sorted(left_list), sorted(right_list))))
 
+
 if __name__ == '__main__':
     main()

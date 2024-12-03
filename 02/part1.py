@@ -17,7 +17,8 @@ def main():
             if not increasing and not decreasing:
                 continue
 
-            difference = all(1 <= abs(a - b) <= 3 for a, b in zip(row, row[1:]))
+            difference = all(1 <= abs(a - b) <= 3 for a,
+                             b in zip(row, row[1:]))
             if not difference:
                 continue
 

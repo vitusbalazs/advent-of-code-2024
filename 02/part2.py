@@ -15,8 +15,9 @@ def check_safe(row):
     difference = all(1 <= abs(a - b) <= 3 for a, b in zip(row, row[1:]))
     if not difference:
         return False
-    
+
     return True
+
 
 def main():
     valid = 0
